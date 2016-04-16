@@ -1,86 +1,185 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        
-        <title> Indicatoare Rutiere </title>
-        
-        <link rel="stylesheet" type="text/css" href="style.css">
-        
-    </head>
+<head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     
-    <body>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<!--<div class="navbar-header" id="navHeader">
+			<a class="navbar-brand" href="#"> Tudor Florea </a>
+		</div> -->
+		<ul class="nav navbar-nav navbar-right">
+			<li> <button class="btn btn-lg buttons" id="scrollHome"> Home </button> </li>
+			<li> <button class="btn btn-lg buttons" id="scrollAbout"> About </button> </li>
+			<li> <button class="btn btn-lg buttons" id="scrollPortfolio"> Portfolio </button> </li>
+			<li> <button class="btn btn-lg buttons" id="scrollContact"> Contact </button> </li>
+		</ul>
+	</div> <!-- ===container-fluid end ===-->
+</nav>
+
+	<div class="container-fluid text-center" id="home">
+		<h1 class='centerText'> T-Design </h1>
+		<p> Where Web Design meets Web Development</p>
+	</div>
+	<div class="container-fluid">
+		<div class="row about">
+			<div class="col-md-2" id="check">
+				<div id="aboutMePhoto">
+					<img class="img-responsive pull-left" src="/images/photo.png" id="imgH">
+				</div>
+				
+			</div> <!-- =====End photo column ===== -->
+			<div class="col-md-4">
+			<div class="aboutMeText">
+				<div class="text-center">
+					<h1>About Me</h1>
+				</div>
+					<p class="pull-right"> My name is Tudor Florea. I'm an engineer and an aspiring web developer. My current goal is to become a full stack web developer and mobile hybrid app developer.</p>
+			</div>
+				<div class="clearFix">
+				</div>	
+			</div> <!-- =====End aboutMeText ===== -->
+			<div class="col-md-3 aboutSkills text-center">
+				<h2>My current skills </h2>
+				<img class="img-responsive" src="images/fontEnd.png" id="imgH">
+			</div> <!-- =====End my current skills ===== -->
+			<div class="col-md-3 aboutSkills text-center">
+				<h2>Also working on </h2>
+				<img class="img-responsive" src="images/backEnd.png">
+			</div> <!-- =====End my future skills ===== -->
+		</div> <!-- =====End row about ===== -->
+	</div> <!-- =====End container fluid about ===== -->
+	<div class="clearFix">
+	</div>
+    <div class="container-fluid bg-3 text-center" id="port">
+	<span class="text-center myWork"><h1> My work </h1> </span>
+	<div class="row">
+		<a href="http://s.codepen.io/TudorFlorea/debug/ZWebmo" target="_blank">
+		<div class="col-md-4">
+			<div class="centerBlock" id="site1">
+				<img class="img-responsive" src="images/tributePage.png">
+			
+			<span class="sitesInfo" id="span1"> Tribute page </span>
+				</a>
+				</div>
+		</div>
+		<div class="col-md-4">
+			<div class="centerBlock" id="site2">
+			<img class="img-responsive" src="images/underConstruction.png">
+			<span class="sitesInfo" id="span2"> Random quote generator </span>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="centerBlock" id="site3">
+				<img class="img-responsive" src="images/underConstruction.png">
+
+				<span class="sitesInfo" id="span3"> Local weather application </span>
+			</div>
+		</div>
+	</div> <!-- =====End row ===== -->
+
+</div> <!-- =====End container fluid ===== -->
+
+<div class="container-fluid bg-3 text-center">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="centerBlock" id="site4">
+				<img class="img-responsive" src="images/underConstruction.png">
+				<span class="sitesInfo" id="span4"> Wikipedia viewer </span>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="centerBlock" id="site5">
+				<img class="img-responsive" src="images/underConstruction.png">
+				<span class="sitesInfo" id="span5"> Twitch.TV JSON API </span>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="centerBlock" id="site6">
+				<img class="img-responsive" src="images/underConstruction.png">
+				<span class="sitesInfo" id="span6"> More in progress... </span>
+			</div>
+		</div>
+	</div> <!-- =====End row ===== -->
+
+</div> <!-- =====End container fluid ===== -->
+
+<div class="container-fluid">
+	<div class="row contact">
+		<div class="col-md-6 contactForm">
+			<div class="contactForm">
+				<form role="form">
+					<legend class="text-center formLegend">
+						<h1>Contact Me! </h1>
+					</legend>
+				 <div class="form-group contactPadding">
+					<label for="name">Name:</label>
+					<input type="text" class="form-control" id="name" placeholder="Jhon Doe">
+				  </div>
+					<br>
+				  <div class="form-group contactPadding">
+					<label for="email">Email address:</label>
+					<input type="email" class="form-control" id="email" placeholder="email@example.com">
+				  </div>
+					<br>
+				<div class="form-group contactPadding">
+ 						<label for="comment">Message:</label>
+  						<textarea class="form-control" rows="5" id="comment"></textarea>
+				</div>
+					
+				  <div class="checkbox contactPadding">
+					<label><input type="checkbox"><i class="fa fa-newspaper-o"></i> Recive newsletter </label>
+				  </div>
+				  <button type="submit" class="btn btn-default " id="send"><i class="fa fa-paper-plane"></i> Submit</button>
+				</form>
+			</div>
+		</div> <!-- ========End contact form columns ========= -->
+		
+		<div class="col-md-6 contactLinks">
+			<div id="contactLinks" class="text-center">
+				<h1> You can also find me on: </h1>
+			</div>
+			<div class="text-center">
+				<a href="https://github.com/TudorFlorea" target="_blank">
+				<button class="btn btn-lg btn-default" id="btn1"> <i class="fa fa-github-square"></i> Github </button>
+				</a>
+			</div>
+			<div class="text-center">
+				<a href="https://www.freecodecamp.com/tudorflorea" target="_blank">
+				<button class="btn btn-lg btn-default" id="btn2"> <i class="fa fa-fire"></i> FCC </button>
+				</a>
+			</div>
+			<div class="text-center">
+				<a href="https://www.linkedin.com/in/tudor-florea-772239118?trk=nav_responsive_tab_profile_pic" target="_blank">
+				<button class="btn btn-lg btn-default" id="btn3"> <i class="fa fa-linkedin-square"></i> LinkedIn </button>
+				</a>
+			</div>
+		</div> <!-- ========End contact links columns ========= -->
+	</div> <!-- =====End row ===== -->
+</div> <!-- =====End container fluid ===== -->
+
+<footer class="container-fluid text-center">
+	<h4> Coded with <span><i class="fa fa-codepen"></i></span> codepen by Tudor Florea </h4>
+</footer>
+    <script type="text/javascript" src="js/script.js"></script>
+<!-- <div class="container-fluid">
+	<div class="row footer">
+		<div clas="col-md-12 text-center">
+			<h3 class="text-center"> Footer </h3>
+		</div>
+	</div>
+</div> -->
     
-       <header id='top'>
-            <div id='logo'>
-           
-                <img src="images/indicatoareRutiere.png" alt="logo" width="850px" height="115px">
-            </div>
-        </header>
-        
-        <nav>
-            
-            <div id="navWrapper">
-                <a href="index.html">
-                    <div id='home'> Home</div>
-                </a>
-                <a href="index.html">
-                    <div id='about'> About </div>
-                </a>
-                <a href="index.html">
-                    <div id='contact'> Contact </div>
-                </a>
-            </div> <!-- end navWrapper -->
-            
-        </nav>
-        
-            <div class="contentWrapper">
-                <header class="contentHeader">
-                    <h1> Indicatoare de avertizare</h1>
-                    <small class="sub"> Postat in <time> 09 Martie 2016 </time></small>
-                    <div id='height'></div>
-                </header>
-                <hr>
-                <article class="contentArticle">
-                    <img src="images/curbaLaStanga.png" alt="curba la stanga" class='imageFloatLeft'>
-                    <p>Semnificaţia indicatoarelor de avertizare începe din locul unde sunt amplasate.
-În cazul indicatoarelor care avertizează sectoare periculoase, zona de acţiune a
-indicatoarelor este reglementată prin plăcuţe adiţionale.
-                    </p><br>
-                    <p>Indicatoarele de avertizare se instalează înaintea locului periculos, la o distanţă
-de maximum 50 m în localităţi, între 100 m şi 250 m în afara localităţilor , respectiv
-între 500 m şi 1.000 m pe autostrăzi şi drumuri expres. Când condiţiile din teren
-impun amplasarea la o distanţă mai mare, sub indicator se instalează un panou
-adiţional "Distanţa între indicator şi începutul locului periculos".</p><br>
-                    <div class="clearBoth"></div>
-                    <hr>
-                    
-                    <footer class="articleFooter">
-                        
-                        <div id='height'></div>
-                    
-                        <small class="subFooter"> Scris de Tudor Florea</small>
-                        
-                        <div id='height'></div>
-                        <div id='height'></div>
-                        <div id='height'></div>
-                    
-                         <a href="index.html">
-                            <div class="readMore"> Citeste tot articolul!</div>
-                         </a>
-                    </footer>
-                    
-                
-                </article>
-                
-                <footer class="contentFooter">
-                    <small> Copyright &copy; 2016 Tudor Florea </small>
-                </footer>
-            
-            
-            </div> <!-- end contentWrapper1 -->
-        
-        
     
-    </body>
+</body>
 </html>
+
+
