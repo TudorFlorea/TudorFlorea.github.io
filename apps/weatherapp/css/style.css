@@ -1,0 +1,70 @@
+#as {
+    font-size: 150px;
+}
+/*
+html, body {
+    background-image: url(../img/rain.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html { 
+background: url(../img/sunny.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+#cov {
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+#is {
+    background-color: transparent !important;
+}
+
+*/
+
+#title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+}
+
+#city {
+    color: #eee;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+#temp {
+    color: #eee;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+}
+
+#temp i {
+    color: white;
+    font-size: 40px;
+}
+
+#description {
+    color: #eee;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+}
+
+#icon {
+    color: white;
+    font-size: 85px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#changeDeg {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #eee;
+    color: black;
+}

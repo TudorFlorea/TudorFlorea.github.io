@@ -1,192 +1,290 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> </script>
-	<![endif]-->
-    
-</head>
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-	<div class="container-fluid">
-		<!--<div class="navbar-header" id="navHeader">
-			<a class="navbar-brand" href="#"> Tudor Florea </a>
-		</div> -->
-		<ul class="nav navbar-nav navbar-right">
-			<li> <button class="btn btn-lg buttons" id="scrollHome"> Home </button> </li>
-			<li> <button class="btn btn-lg buttons" id="scrollAbout"> About </button> </li>
-			<li> <button class="btn btn-lg buttons" id="scrollPortfolio"> Portfolio </button> </li>
-			<li> <button class="btn btn-lg buttons" id="scrollContact"> Contact </button> </li>
-		</ul>
-	</div> <!-- ===container-fluid end ===-->
-</nav>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
 
-	<div class="container-fluid text-center" id="home">
-		<h1 class='centerText'> T-Design </h1>
-		<p> Where Web Design meets Web Development</p>
-	</div>
-	<div class="container-fluid">
-		<div class="row about">
-			<div class="col-md-2" id="check">
-				<div id="aboutMePhoto">
-					<img class="img-responsive pull-left" src="/images/photo.png" id="imgH">
-				</div>
-				
-			</div> <!-- =====End photo column ===== -->
-			<div class="col-md-4">
-			<div class="aboutMeText">
-				<div class="text-center">
-					<h1>About Me</h1>
-				</div>
-					<p class="pull-right"> My name is Tudor Florea. I'm an engineer and an aspiring web developer. My current goal is to become a full stack web developer and mobile hybrid app developer.</p>
-			</div>
-				<div class="clearFix">
-				</div>	
-			</div> <!-- =====End aboutMeText ===== -->
-			<div class="col-md-3 aboutSkills text-center">
-				<h2>My current skills </h2>
-				<img class="img-responsive" src="images/fontEnd.png" id="imgH">
-			</div> <!-- =====End my current skills ===== -->
-			<div class="col-md-3 aboutSkills text-center">
-				<h2>Also working on </h2>
-				<img class="img-responsive" src="images/backEnd.png">
-			</div> <!-- =====End my future skills ===== -->
-		</div> <!-- =====End row about ===== -->
-	</div> <!-- =====End container fluid about ===== -->
-	<div class="clearFix">
-	</div>
-    <div class="container-fluid bg-3 text-center" id="port">
-	<span class="text-center myWork"><h1> My work </h1> </span>
-	<div class="row">
-		<div class="col-md-4">
-			<a href="http://s.codepen.io/TudorFlorea/debug/ZWebmo" target="_blank">
-			<div class="centerBlock" id="site1">
-				<img class="img-responsive" src="images/tributePage.png">
-			
-			<span class="sitesInfo" id="span1"> Tribute page </span>
-			</a>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<a href="./portfolio/Random Quote Generator/index.html" target="_blank">
-			<div class="centerBlock" id="site2">
-			<img class="img-responsive" src="images/underConstruction.png">
-			<span class="sitesInfo" id="span2"> Random quote generator </span>
-			</a>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<a href="./portfolio/Weather App/index.html" target="_blank">
-			<div class="centerBlock" id="site3">
-				<img class="img-responsive" src="images/underConstruction.png">
-				<span class="sitesInfo" id="span3"> Local weather application </span>
-			</a>
-			</div>
-		</div>
-	</div> <!-- =====End row ===== -->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <title>Tudor Florea - Portfolio</title>
 
-</div> <!-- =====End container fluid ===== -->
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <link rel="icon" type="image/png" href="./assets/images/favicon.ico">
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font_icon/css/pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="assets/font_icon/css/helper.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-<div class="container-fluid bg-3 text-center">
-	<div class="row">
-		<div class="col-md-4">
-			<div class="centerBlock" id="site4">
-				<img class="img-responsive" src="images/underConstruction.png">
-				<span class="sitesInfo" id="span4"> Wikipedia viewer </span>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="centerBlock" id="site5">
-				<img class="img-responsive" src="images/underConstruction.png">
-				<span class="sitesInfo" id="span5"> Twitch.TV JSON API </span>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="centerBlock" id="site6">
-				<img class="img-responsive" src="images/underConstruction.png">
-				<span class="sitesInfo" id="span6"> More in progress... </span>
-			</div>
-		</div>
-	</div> <!-- =====End row ===== -->
+        <!-- google fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500|Lato:300,400,700,900,300italic,400italic,700italic,900italic|Raleway:400,200,300,500,100|Titillium+Web:400,200,300italic,300,200italic' rel='stylesheet' type='text/css'>
 
-</div> <!-- =====End container fluid ===== -->
+        <script src="assets/js/modernizr.js"></script>
 
-<div class="container-fluid">
-	<div class="row contact">
-		<div class="col-md-6 contactForm">
-			<div class="contactForm">
-				<form role="form">
-					<legend class="text-center formLegend">
-						<h1>Contact Me! </h1>
-					</legend>
-				 <div class="form-group contactPadding">
-					<label for="name">Name:</label>
-					<input type="text" class="form-control" id="name" placeholder="Jhon Doe">
-				  </div>
-					<br>
-				  <div class="form-group contactPadding">
-					<label for="email">Email address:</label>
-					<input type="email" class="form-control" id="email" placeholder="email@example.com">
-				  </div>
-					<br>
-				<div class="form-group contactPadding">
- 						<label for="comment">Message:</label>
-  						<textarea class="form-control" rows="5" id="comment"></textarea>
-				</div>
-					
-				  <div class="checkbox contactPadding">
-					<label><input type="checkbox"><i class="fa fa-newspaper-o"></i> Recive newsletter </label>
-				  </div>
-				  <button type="submit" class="btn btn-default " id="send"><i class="fa fa-paper-plane"></i> Submit</button>
-				</form>
-			</div>
-		</div> <!-- ========End contact form columns ========= -->
-		
-		<div class="col-md-6 contactLinks">
-			<div id="contactLinks" class="text-center">
-				<h1> You can also find me on: </h1>
-			</div>
-			<div class="text-center">
-				<a href="https://github.com/TudorFlorea" target="_blank">
-				<button class="btn btn-lg btn-default" id="btn1"> <i class="fa fa-github-square"></i> Github </button>
-				</a>
-			</div>
-			<div class="text-center">
-				<a href="https://www.freecodecamp.com/tudorflorea" target="_blank">
-				<button class="btn btn-lg btn-default" id="btn2"> <i class="fa fa-fire"></i> FCC </button>
-				</a>
-			</div>
-			<div class="text-center">
-				<a href="https://www.linkedin.com/in/tudor-florea-772239118?trk=nav_responsive_tab_profile_pic" target="_blank">
-				<button class="btn btn-lg btn-default" id="btn3"> <i class="fa fa-linkedin-square"></i> LinkedIn </button>
-				</a>
-			</div>
-		</div> <!-- ========End contact links columns ========= -->
-	</div> <!-- =====End row ===== -->
-</div> <!-- =====End container fluid ===== -->
+    </head>
+    <body id="body">
+        <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-<footer class="container-fluid text-center">
-	<h4> Coded with <span><i class="fa fa-codepen"></i></span> codepen by Tudor Florea </h4>
-</footer>
-    <script type="text/javascript" src="js/script.js"></script>
-<!-- <div class="container-fluid">
-	<div class="row footer">
-		<div clas="col-md-12 text-center">
-			<h3 class="text-center"> Footer </h3>
-		</div>
-	</div>
-</div> -->
-    
-    
-</body>
+        <!-- Header area -->
+        <header id="header">
+            <div class="center text-center">
+                <h1 class="bigheadline">Tudor Florea</h1>
+                <h4 class="subheadline"><span class="txt-type" data-wait="2000" data-words='["Android Developer", "Java Developer", "Web Developer"]'></span>
+                </h1></h4>
+            </div>
+            <div class="bottom">
+                <a data-scroll href="#navigation" class="scrollDown animated pulse" id="scrollToContent"><i class="pe-7s-angle-down-circle pe-va"></i></a>
+            </div>
+        </header>
+
+        <!-- Navigation area -->
+        <section id="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="logo"><a data-scroll href="#body" class="logo-text">Home</a></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="nav">
+                            <a href="#" data-placement="bottom" title="Menu" class="menu" data-toggle="dropdown"><i class="pe-7s-menu"></i></a>
+                             <div class="dropdown-menu">
+                                 <div class="arrow-up"></div>
+                                 <ul>
+                                     <li><a data-scroll href="#body">Home <i class="pe-7s-home"></i></a><span class="menu-effect"></span></li>
+                                     <li><a data-scroll href="#services">Skills <i class="pe-7s-config"></i></a><span class="menu-effect"></span></li>
+                                     <li><a data-scroll href="#portfolio">Portfolio <i class="pe-7s-glasses"></i></a><span class="menu-effect"></span></li>
+                                     <li><a data-scroll href="#contact">Contact <i class="pe-7s-help1"></i></a><span class="menu-effect"></span></li>
+                                 </ul>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>            
+        </section>
+        
+        <!-- Content Area -->
+
+        <!-- services section -->
+
+        <section id="services" class="service-area">
+            <div class="container">
+                <h2 class="block_title">Skills</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="services">
+                            <div class="service-wrap">    
+                                <!--<i class="pe-7s-science pe-dj pe-va"></i>-->
+                                <i class="fab fa-android fa-5x"></i>
+                                <h3>Android Development</h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="services">
+                            <div class="service-wrap">
+                                <!--<i class="pe-7s-monitor pe-dj pe-va"></i>-->
+                                <i class="fab fa-java fa-5x"></i>
+                                <h3>Java Development</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="services">
+                            <div class="service-wrap">
+                                <!--<i class="pe-7s-edit pe-dj pe-va"></i>-->
+                                <i class="fab fa-html5 fa-5x"></i>
+                                <h3>Frontend</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="services">
+                            <div class="service-wrap">
+                                <!--<i class="pe-7s-config pe-dj pe-va"></i>-->
+                                <i class="fab fa-php fa-5x"></i>
+                                <h3>PHP</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- services -->
+
+        <!-- Portfolio Area -->
+
+        <section id="portfolio" class="portfolio-area">
+            <div class="container">
+                <h2 class="block_title">My Works</h2>
+                <div class="row port cs-style-3">
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+                        <figure>
+                            <img src="assets/images/numberfacts_portfolio.png" alt="number facts">
+                            <figcaption>
+                                <h3>NumberFacts</h3>
+                                <a href="https://github.com/TudorFlorea/number-facts" target="_blank" class="button-2" ><i class="fab fa-github fa-3x"></i></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+                        <figure>
+                            <img src="assets/images/popularmovies_portfolio.png" alt="popular movies">
+                            <figcaption>
+                                <h3>PopularMovies</h3>
+                                <a href="https://github.com/TudorFlorea/PopularMovies" target="_blank" class="button-2" ><i class="fab fa-github fa-3x"></i></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+                        <figure>
+                            <img src="assets/images/xyzreader_portfolio.png" alt="xyz reader">
+                            <figcaption>
+                                <h3>XYZ Reader</h3>
+                                <a href="https://github.com/TudorFlorea/xyz-reader" target="_blank" class="button-2" ><i class="fab fa-github fa-3x"></i></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+                        <figure>
+                            <img src="assets/images/tradetour_portfolio.PNG" alt="tradetour.ro site">
+                            <figcaption>
+                                <h3>TradeTour.ro</h3>
+                                <a href="http://tradetour.ro/" target="_blank" class="button-2" ><i class="fas fa-external-link-alt fa-3x"></i></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+                        <figure>
+                            <img src="assets/images/timelapse_portfolio.png" alt="timelapse chrome extension">
+                            <figcaption>
+                                <h3>Timelapse</h3>
+                                <a href="https://chrome.google.com/webstore/detail/timelapse/iacofhadddjkdledbjepchdolhamnjfl" target="_blank" class="button-1" ><i class="fab fa-chrome fa-3x"></i></i></a>
+                                <a href="https://github.com/TudorFlorea/Timelapse" target="_blank" class="button-2" ><i class="fab fa-github fa-3x"></i></a>
+                            </figcaption> 
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+                        <figure>
+                            <img src="assets/images/multidash_portfolio.PNG" alt="multidash chrome extension">
+                            <figcaption>
+                                <h3>Multidash</h3>
+                                <a href="https://chrome.google.com/webstore/detail/multidash/noakbipcieoodhnfdbcdcecbjljohmmc" target="_blank" class="button-1" ><i class="fab fa-chrome fa-3x"></i></i></a>
+                                <a href="https://github.com/turtlesTeam17/multifunctional-dashboard" target="_blank" class="button-2" ><i class="fab fa-github fa-3x"></i></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+                        <figure>
+                            <img src="assets/images/weatherapp_portfolio.PNG" alt="timelapse chrome extension">
+                            <figcaption>
+                                <h3>WeatherApp</h3>
+                                <a href="./apps/weatherapp/index.html" target="_blank" class="button-1" ><i class="fas fa-external-link-alt fa-3x"></i></a>
+                                <a href="https://github.com/TudorFlorea/Weather-App" target="_blank" class="button-2" ><i class="fab fa-github fa-3x"></i></a>
+                            </figcaption> 
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+                        <figure>
+                            <img src="assets/images/wipediaviewer_portfolio.PNG" alt="multidash chrome extension">
+                            <figcaption>
+                                <h3>Wikipedia Viewer</h3>
+                                <a href="./apps/wikipediaviewer/index.html" target="_blank" class="button-1" ><i class="fas fa-external-link-alt fa-3x"></i></a>
+                                <a href="https://github.com/TudorFlorea/wikipedia-viewer" target="_blank" class="button-2" ><i class="fab fa-github fa-3x"></i></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div><!-- container -->
+        </section><!-- portfolio -->
+
+
+        <!-- Contact Area -->
+
+        <section id="contact" class="mapWrap">
+            <div id="googleMap" style="width:100%;"></div>
+            <div id="contact-area">
+                <div class="container">
+                    <h2 class="block_title">Let's get in touch!</h2>
+                    <div class="row">
+                        <div class="col-xs-12">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="moreDetails">
+                                <h2 class="con-title">More About me</h2>
+                                <p> I'm a technology enthousiast which loves programming, snowboarding and cats!</p>
+                                <ul class="address">
+                                    <li><i class="pe-7s-map-marker"></i><span>Bucharest ,<br>Romania</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 class="con-title">Drop me a line</h2>
+                            <form role="form" method="POST" action="https://formspree.io/ftudorel92@yahoo.com">
+                              <div class="form-group">
+                                <input type="text" name="name" class="form-control" id="user_name" placeholder="Enter your name">
+                              </div>
+                              <div class="form-group">
+                                <input type="email" name="email" class="form-control" id="your_email" placeholder="Enter your email">
+                              </div>
+                              <div class="form-group">
+                                <textarea name="message" id="user_message" class="form-control" rows="5" required></textarea>
+                              </div>
+
+                              <button type="submit" name="submit" class="btn medium">Let me know</button>
+                            </form>   
+                        </div>
+                    </div>
+                </div><!-- container -->
+            </div><!-- contact-area -->
+            <div id="social">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="scoialinks">
+                                <li class="normal-txt">Find me on</li>
+                                <li class="social-icons"><a class="facebook" href="https://www.facebook.com/tudorel.florea.1?ref=bookmarks"></a></li>
+                                <li class="social-icons"><a class="twitter" href="https://twitter.com/Tudorel_Florea"></a></li>
+                                <li class="social-icons"><a class="linkedin" href="https://www.linkedin.com/in/tudor-florea-772239118/"></a></li>
+                                <li class="social-icons"><a class="google-plus" href="https://plus.google.com/114290147423789005655"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- social -->
+        </section><!-- contact -->
+
+        <!-- Footer Area -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p class="copyright">© Copyright 2018 <a href="#" target="_blank">Tudor Florea</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Necessery scripts -->
+        <script src="assets/js/jquery-2.1.3.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script src="assets/js/jquery.actual.min.js"></script>
+        <script src="assets/js/smooth-scroll.js"></script>
+        <script src="assets/js/owl.carousel.js"></script>
+        <script src="assets/js/script.js"></script>
+
+    </body>
 </html>
-
 
