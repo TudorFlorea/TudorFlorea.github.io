@@ -2,7 +2,7 @@ $(document).ready(function() {
     var latitude, longitude, callString, response, openWeatherLink, apiKey, weatherId, isPressedDeg;
     
     apiKey = "&appid=8879d92e68e68dce535d0993921530ae";
-    openWeatherLink = "http://api.openweathermap.org/data/2.5/weather?";
+    openWeatherLink = "https://api.openweathermap.org/data/2.5/weather?";
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
