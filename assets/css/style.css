@@ -646,6 +646,17 @@ footer {
 		background-attachment: fixed;
 		background-position: 50% -50px;
 	}
+	.no-touch .cs-style-3 figure figcaption,
+	.cs-style-3 figure.cs-hover figcaption {
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		-ms-transform: translateY(0px);
+		transform: translateY(0px);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
+	transition: transform 0.4s, opacity 0.1s;
+	}
 }
 
 @media all and (max-width: 768px) {
