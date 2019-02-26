@@ -1,0 +1,275 @@
+
+@media screen and (max-width: 1024px) {
+    
+    .fixed-wrapper {
+        width: 90%;
+    }
+
+
+    #logo {
+        text-align: center;
+    }
+    
+    #header-get-started {
+        margin: 40px auto;
+        width: 100%;
+        float: none;
+        text-align: center;
+        display: block;
+    }
+
+    #benefits-text-wrapper h3 {
+        margin: 40px auto;
+    }
+
+    #heading-offer {
+        display: block;
+        margin: 0 auto;
+        
+        float: none;
+    }
+
+    #heading-offer h2 {
+        text-align: center;
+    }
+
+    #subscribe-input-wrapper {
+        padding: 0px 5%;
+    }
+
+    #subscribe-info {
+        padding: 0px 5%;
+    }
+
+    #benefits-text-wrapper {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #header-get-started div h2,
+    #header-get-started div p {
+        text-align: center;
+    }
+
+    /* #header-get-started {
+        display: block;
+        margin: 30px auto;
+        text-align: center;
+        float: none;
+        clear: both;
+    } */
+    
+    
+    #footer-nav-wrapper {
+        display: block;
+        width: 100%;
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    .footer-nav-list-wrapper {
+        width: 22%;
+        text-align: left;
+    }
+    
+    #footer-contact-wrapper {
+        display: block;
+        width: 50%;
+        text-align: center;
+        margin: 40px auto;
+    }
+
+    .footer-nav-list-heading {
+        font-size: 2rem;
+    }
+
+    .footer-location-text {
+        font-size: 1.2rem;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .footer-telephone-text {
+        font-size: 1.2rem;
+        text-align: left;
+        vertical-align: top;
+        padding-top: 15px; 
+    }
+
+    #footer-copyright-text {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 940px) {
+    .price-card,
+    .price-card:nth-child(2){
+        width: 60%;
+        display: block;
+        margin: 40px auto;
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+
+    #price-info-image {
+        width: 60%;
+        display: block;
+        margin: 40px auto;
+    }
+
+    #price-info-text-wrapper {
+        margin: 40px auto;
+        display: block;
+        width: 90%;
+    }
+
+    #price-info-heading {
+        font-size: 3rem;
+    }
+
+    #price-info-text {
+        font-size: 1.2rem;
+    }
+
+    #get-started-image {
+        float: none;
+        display: block;
+        width: 60%;
+        margin: 40px auto;
+    }
+
+    #get-started-text-wrapper {
+        margin: 40px auto;
+        display: block;
+        width: 90%;
+    }
+
+    #get-started-text {
+        font-size: 1.2rem;
+    }
+
+    .option-container {
+        display: block;
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    .option-heading {
+        font-size: 1.8rem;
+    }
+
+    .option-text-info {
+        font-size: 1.2rem;
+    }
+
+    .testimonial-item {
+        display: block;
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    .testimonial-image {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .testimonial-text {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-nav-list-wrapper {
+        width: 35%;
+    }
+
+    #features-list {
+        display: block;
+        margin: 40px auto;
+        width: 80%;
+    }
+
+    #features-details-wrpper {
+        display: block;
+        margin: 40px auto;
+        width: 80%;
+    }
+
+    .features-list-item-selected {
+        width: 96%;
+        border-right: 5px solid #FDE454;
+    }
+
+    #subscribe-text,
+    #subscribe-input,
+    #subscribe-button {
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        text-align: center;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 630px) {
+
+
+    .price-card,
+    .price-card:nth-child(2){
+        width: 90%;
+        display: block;
+        margin: 40px auto;
+    }
+
+    .benefits-list {
+        width: 100%;
+    }
+
+    #features-details-heading {
+        width: 80%;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .features-details-item {
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .footer-nav-list-wrapper {
+        width: 100%;
+        padding: 20px 10%;
+        text-align: center;
+    }
+
+    .footer-nav-list-heading {
+        font-size: 3rem;
+    }
+
+    .footer-nav-list-item-link {
+        font-size: 1.2rem;
+    }
+
+    #footer-contact-wrapper {
+        width: 100%;
+    }
+
+    /* .footer-location-text {
+        font-size: 1.5rem;
+    }
+
+    .footer-telephone-text {
+        font-size: 3rem;
+    } */
+
+    #footer-copyright-text {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,65 @@
+
+.right {
+    float: right;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.fixed-wrapper {
+    display: table;
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.yellow-background {
+    background-color: #FEEA3B;
+}
+
+.green-background {
+    background-color: #019587;
+}
+
+.red-background {
+    background-color: #F34135;
+}
+
+.yellow-color {
+    color: #FEEA3B;
+}
+
+.green-color {
+    color: #019587;
+}
+
+.white-color {
+    color: #fff;
+}
+
+.round-block-image {
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.price-card-title,
+.price-card-info,
+.price-card-price,
+.price-card-price-info,
+.price-card-button,
+.price-card-list-item,
+.image-text-info-h3,
+.image-text-info-p,
+.option-text,
+.option-heading,
+.testimonial-text,
+.testimonial-signature,
+.footer-nav-list-heading,
+.footer-nav-list,
+#footer-contact-wrapper,
+#footer-copyright-text,
+#features-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}

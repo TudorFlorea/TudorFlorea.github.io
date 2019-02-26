@@ -1,0 +1,236 @@
+
+#video-bg-section {
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(0,0,0,1));
+    background-size:     cover; 
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    background-attachment: fixed;
+    color: #fff;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+#video {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(0,0,0,1));
+}
+
+#headings-wrapper {
+    padding: 4rem 0rem;
+}
+
+#big-heading {
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+#small-heading {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#small-heading:after {
+    display: block;
+    width: 100px;
+    margin: 1rem auto;
+    content: "";
+    border-bottom: 3px solid #FFCC00;
+}
+
+#large-articles-wrapper,
+#latest-stories-wrapper {
+    display: inline-block;
+}
+
+#large-articles-wrapper {
+    float: right;
+    width: 700px;
+}
+
+#latest-stories-wrapper {
+    width: 320px;
+}
+
+#latest-stories-heading {
+    border-left: 5px solid #FFCC00;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#latest-stories-list {
+    list-style-type: none;
+}
+
+.latest-stories-list-item {
+    margin: 1rem 0rem;
+}
+
+.latest-stories-image,
+.latest-stories-text-wrapper {
+    display: inline-block;
+}
+
+.latest-stories-image {
+    width: 30%;
+    height: auto;
+}
+
+.latest-stories-text-wrapper {
+    width: 66%;
+    vertical-align: top;
+    padding-left: 3%;
+}
+
+.latest-stories-category {
+    text-decoration: none;
+    color: inherit;
+}
+
+.latest-stories-category:hover {
+    text-decoration: underline;
+}
+
+.latest-stories-name {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.9rem;
+}
+
+.latest-stories-name:hover {
+    color: #aaa;
+}
+
+.see-more {
+    font-size: 1rem;
+    border-bottom: 3px solid #FFCC00;
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.see-more:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    background: #FFCC00;
+    z-index: -1;
+    transition: transform 0.3s;
+}
+
+.see-more:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.see-more:hover::after{
+    transform: scaleY(1);
+}
+
+/***************************
+**Articles
+***************************/
+
+.article-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+#full-width-article-wrapper {
+    width: 700px;
+    overflow: hidden;
+    position: relative;
+}
+
+#full-width-article {
+    display: block;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(0,0,0,0.75)), url("../media/full-width-article-image.png");
+    background-size: cover, cover;
+    background-repeat:   no-repeat, no-repeat;
+    background-position: center center, center center; 
+    color: #fff;
+    transition: all 0.5s;
+}
+
+#full-width-article:hover {
+    transform: scale(1.1);
+}
+
+#full-width-article-image {
+    visibility: hidden;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#full-width-article-text-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+}
+
+#half-width-article-wrapper {
+    margin-top: 2rem;
+    display: table;
+    width: 100%;
+    background-color: transparent;
+}
+
+.half-width-article {
+    display: inline-block;
+    background-color: #fff;
+    vertical-align: top;
+    box-sizing: content-box;
+    width: 337.5px;
+    height: 390px;
+}
+
+.half-width-article-image-wrapper {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.half-width-article-image-wrapper:hover {
+    border-bottom: 5px solid #FFCC00;
+}
+
+.half-width-article-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+}
+
+.half-width-article-image:hover {
+    transform: scale(1.1);
+
+}
+
+.full-width-article-text-wrapper {
+    color: #000;
+    padding: 1rem;
+}
+
+.read-more {
+    padding-top: 0.8rem;
+}
+
+#left-article {
+    margin-left: 20px;
+}

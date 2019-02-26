@@ -1,0 +1,12 @@
+@import "./resets.css";
+@import "./general-styles.css";
+@import "./heading-section.css";
+@import "./price-section.css";
+@import "./get-started-section.css";
+@import "./options-section.css";
+@import "./testimonial-section.css";
+@import "./features-section.css";
+@import "./newsletter-section.css";
+@import "./footer-section.css";
+@import "./responsive.css";
+

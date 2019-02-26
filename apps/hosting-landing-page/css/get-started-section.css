@@ -1,0 +1,28 @@
+#get-started-section {
+    margin: 40px 0px;
+}
+
+#get-started-image {
+    width: 30%;
+    float: right;
+}
+
+#get-started-heading,
+#get-started-text {
+    margin-left: 0px;
+}
+
+#get-started-link {
+    display: block;
+    width: 200px;
+    font-size: 20px;
+    background-color: #029487;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 12px 5%;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}

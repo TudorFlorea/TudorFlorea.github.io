@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+.clear-fix {
+    content: "";
+    clear: both;
+}
+
+.fixed-container {
+    max-width: 1020px;
+    display: table;
+    margin: 0 auto;
+}
+
+.fixed-small-container {
+    max-width: 940px;
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nav-list-item a span,
+#latest-stories-heading,
+#big-heading,
+#small-heading,
+#large-articles-wrapper,
+.see-more,
+.latest-stories-category,
+.latest-stories-name,
+#watch-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

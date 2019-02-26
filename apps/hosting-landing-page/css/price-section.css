@@ -1,0 +1,119 @@
+/**********************************
+** Price section
+**********************************/
+
+#price-section {
+    background-color: #F2F2F2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.price-card {
+    display: inline-block;
+    width: 32%;
+    transition: all 0.5s;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.price-card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.price-card:nth-child(2) {
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.price-card-title {
+    font-size: 30px;
+    padding: 15px 0px 5px 15px;
+}
+
+.price-card-info {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.price-card-price {
+    font-size: 50px;
+    padding: 0px 0px 15px 15px;
+}
+
+.price-card-price-info {
+    font-size: 15px;
+}
+
+.price-card-body {
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+
+.price-card-list {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.price-card-list-item {
+    color: #959595;
+    padding: 10px 0px 0px 10px;
+}
+
+.price-card-button {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 90%;
+    text-align: center;
+    background-color: #019587;
+    margin: 20px 5%;
+    padding: 15px 0px 15px 0px;
+    transition: all 0.5s;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.price-card-button:hover {
+    background-color: #016259;
+    box-shadow: none;
+}
+
+.promo {
+    border-radius: 50%;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-color: yellow;
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 3px;
+}
+
+.image-text-wrapper {
+    display: inline-block;
+    width: 69.5%;
+    vertical-align: top;
+}
+
+.image-text-info-h3 {
+    margin: 30px 20px 20px 30px;
+    font-size: 45px;
+}
+
+.image-text-info-p {
+    color: #959595;
+    margin: 30px 20px 20px 30px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+#price-info-wrapper {
+    margin: 40px 0px 50px 0px;
+}
+
+#price-info-image {
+    width: 30%;
+}

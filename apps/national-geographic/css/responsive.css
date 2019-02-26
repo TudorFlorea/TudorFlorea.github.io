@@ -1,0 +1,141 @@
+@media screen and (max-width: 1150px) {
+    html {
+        font-size: 14px;
+    }
+
+    #latest-stories-wrapper .see-more {
+        display: block;
+        margin: 1rem auto;
+        text-align: center;
+        width: 5rem;
+    }
+
+    #full-width-article-wrapper {
+        width: 100%;
+    }
+
+    #large-articles-wrapper {
+        float: none;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    #latest-stories-wrapper {
+        display: block;
+        margin: 1rem auto;
+        width: 700px;
+    }
+
+    .latest-stories-list-item {
+        display: inline-block;
+        width: 48.5%;
+    }
+
+    .fixed-small-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .watch-list-item{
+        width: 22.8%;
+        margin: 1%;
+    }
+
+    .watch-list-item:nth-child(5) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 740px) {
+
+    .nav-list-item {
+        display: none;
+    }
+
+    .nav-list-item:nth-of-type(2),
+    .nav-list-item:last-of-type {
+        display: inline-block;
+    }
+
+    #articles-wrapper {
+        width: 85%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #large-articles-wrapper {
+        width: 100%;
+        display: block;
+        margin: 2rem auto;
+    }
+    
+    .half-width-article {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 2rem auto;
+    }
+
+    #latest-stories-wrapper {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .latest-stories-image {
+        width: 20%;
+    }
+
+    .latest-stories-list-item {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    #left-article {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .watch-list-item{
+        width: 31.2%;
+    }
+
+    .watch-list-item:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    #watch-viedo-bg {
+        height: 300px;
+    }
+
+    #watch-link {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .watch-list-item{
+        width: 48%;
+    }
+
+    .watch-list-item:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .watch-list-item{
+        width: 100%;
+    }
+
+    .watch-list-item:nth-child(1) {
+        display: none;
+    }
+}

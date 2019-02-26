@@ -1,0 +1,108 @@
+
+#header-section {
+    background-color: #5b429d;
+    background-image: url("../media/laptop.jpg");
+    background-size:     cover; 
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    background-attachment: fixed;
+}
+
+#header-overlay {
+    background-image: linear-gradient(to right, rgba(1, 149, 135, 0.6) , rgba(1, 149, 135, 1));
+}
+
+#logo {
+    display: block;
+    margin: 80px 0px;
+}
+
+#header-benefits {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+#header-benefits h1,
+#header-benefits h3 {
+    color: #E1EF42;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+#benefits-text-wrapper {
+    display: inline-block;
+    width: 65%;
+}
+
+#header-benefits h1 {
+    font-size: 60px;
+}
+
+#header-benefits h3 {
+    font-size: 35px;
+}
+
+.benefits-list {
+    list-style-type: none;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+.benefits-list-item {
+    padding: 10px;
+}
+.benefits-list-item span {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 3px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#header-get-started {
+    display: inline-block;
+    width: 34%;
+    vertical-align: top;
+}
+
+#header-get-started div p {
+    text-align: right;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#header-get-started div h2 {
+    text-align: right;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 140px;
+    font-weight: 200;
+    line-height: 120px;
+}
+
+#get-started-button {
+    display: block;
+    width: 90%;
+    font-size: 30px;
+    background-color: #E1EF42;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 12px 5%;
+    margin:80px 5%;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.price-card-button span {
+    font-size: 1.6rem;
+}
+
+#get-started-button:hover {
+    background-color:#c0160b;
+    color: #fff;
+    box-shadow: none;
+}

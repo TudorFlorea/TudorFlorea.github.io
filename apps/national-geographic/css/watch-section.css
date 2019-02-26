@@ -1,0 +1,142 @@
+
+#watch-section {
+    background-color: #f2f2f2;
+    padding: 4rem 0rem;
+}
+
+
+
+#watch-heading,
+#watch-sub-heading {
+    text-align: center;
+}
+
+#watch-heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+#watch-sub-heading {
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+}
+
+#watch-sub-heading:after {
+    display: block;
+    width: 100px;
+    margin: 1rem auto;
+    content: "";
+    border-bottom: 3px solid #FFCC00;
+}
+
+#watch-viedo-bg {
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(0,0,0,1));
+    background-size:     cover; 
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    background: rgba(0,0,0,0);
+}
+
+#promo-video {
+    position: relative;
+    z-index: 0;
+    right: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(0,0,0,1));
+}
+
+#video-bg-overlay {
+    background: rgba(0,0,0,0);
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    color: #fff;
+    padding: 2.5rem;
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(0,0,0,1));
+}
+
+#video-bg-overlay-subheading {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+#watch-link {
+    display: block;
+    width: 250px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    background-color: #FFCC00;
+    text-align: center;
+    margin-top: 0.7rem;
+    padding: 0.8rem;
+    position: relative;
+    z-index: 1;
+}
+
+#watch-link:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    background: #fff;
+    z-index: -1;
+    transform-origin: 0% 100%;
+    transition: transform 0.3s;
+}
+
+#watch-link:hover::before {
+    transform: scaleX(1);
+}
+
+#video-bg-overlay-heading {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+#watch-list-heading {
+    display: inline-block;
+    margin: 2rem 0rem;
+}
+
+#watch-list-see-more {
+    float: right;
+    vertical-align: text-top;
+    margin: 2rem 0rem;
+}
+
+#watch-list {
+    list-style-type: none;
+}
+
+.watch-list-item {
+    display: inline-block;
+    width: 18%;
+    vertical-align: top;
+    margin: 1rem 1%;
+}
+
+.watch-list-item:first-of-type {
+    margin-left: 0;
+}
+
+.watch-list-item:last-of-type {
+    margin-right: 0;
+}
+
+.watch-list-item img {
+    display: block;
+    width: 100%;
+    height: auto
+}

@@ -1,0 +1,52 @@
+
+/**********************************
+** Newsletter
+**********************************/
+
+#newsletter-section {
+    background-color: #FEEA3B;
+    padding-bottom: 40px;
+}
+
+#subscribe-input-wrapper {
+    position: relative;
+    margin: 40px 0px;
+}
+
+#subscribe-text {
+    float: left;
+    width: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+#subscribe-button {
+    float: right;
+    width: 200px;
+    font-size: 20px;
+    background-color: #029487;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#subscribe-input {
+    width: 300px; /* fallback */
+    width: calc(100% - 410px);
+    vertical-align: bottom;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+#subscribe-info {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #029487;
+}

@@ -1,0 +1,700 @@
+<!-- https://www.templatemonster.com/demo/55809.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Modal -->
+
+    <div id="gdpr-modal-overlay">
+        <div id="gdpr-modal">
+            <span id="gdpr-close"></span>
+            <h1 class="gdpr-heading">GDPR COMPLIENCE</h1>
+            <p class="gdpr-text">It’s very likely to use consent for most marketing activities or messages, website Cookies, online tracking methods, to install apps/ software on individuals’s devices. It’s required to provide consent in a such a way that consumers can easily understand that they have consent, and what they have consent to, without any important details hidden with small print.</p>
+            <div class="gdpr-timer-wrapper"><span>Hiding in: </span><span id="gdpr-timer-value"></span></div>
+            <a id="gdpr-ok">OK</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-wrapper">
+            <a href="#"><img id="logo" src="./media/logo-dark.png"></a>
+            <a class="burger" href="#"><span></span></a>
+            <div class="dots"><span></span></div>
+            <div id="contact-wrapper">
+                <div class="contact--item-wrapper">
+                    <div class="contact--icon-overlay">
+                        <img class="contact--icon" src="./media/phone-logo.png">
+                    </div>
+                    <div class="contact--info-wrapper">
+                        <a class="contact--info-link" href="#">
+                            <span>1-800-1234-567</span>
+                        </a>
+                        <a class="contact--info-link" href="#">
+                            <span>1-800-3214-654</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact--item-wrapper">
+                    <div class="contact--icon-overlay">
+                        <img class="contact--icon" src="./media/map-marker-logo.png">
+                    </div>
+                    <div class="contact--info-wrapper">
+                        <a class="contact--info-link" href="#">
+                            <span>2130 Fulton Street San Diego CA 94117-1080 USA</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="scoll-top">
+        <img id="scoll-top-img" src="./media/top-arrow-white-small.png">
+    </div>
+    <!-- Navigation -->
+    <nav id="nav">
+        <div id="nav-wrapper">
+                <ul class="nav--list">
+                        <li class="nav--list--item">
+                            <a href="#" class="nav--link nav--link-active">
+                                <img id="nav-logo" src="./media/logo-dark.png">
+                            </a>
+                        </li>
+                        <li class="search-input-wrapper">
+                            <input id="search-input" type="text">
+                            <label id="search-input-label" for="search-input">
+                                    Type your search here...
+                            </label>
+                        </li>
+
+                        <li id="nav-home" class="nav--list--item">
+                            <a href="#" class="nav--link nav--link-active">
+                                <span>HOME</span>
+                            </a>
+                        </li>
+                        <li class="nav--list--item">
+                            <a id="nav-about" href="#" class="nav--link">
+                                <span>ABOUT</span>
+                            </a>
+                        </li>
+                        <li class="nav--list--item">
+                            <a href="#" class="nav--link">
+                                <span>TEAM</span>
+                            </a>
+                        </li>
+                        <li class="nav--list--item">
+                            <a id="nav-pages" href="#" class="nav--link">
+                                <span>PAGES &#10097;</span>
+                            </a>
+                            <ul class="nav--sub-nav">
+                                <li class="nav--sub-nav--item">
+                                    <ul class="sub-nav-list">
+                                        <li class="sub-nav-list--item">
+                                            <p class="sub-nav-list--item--heading">
+                                                <span>Heading</span>
+                                            </p>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav--sub-nav--item">
+                                    <ul class="sub-nav-list">
+                                        <li class="sub-nav-list--item">
+                                            <p class="sub-nav-list--item--heading">
+                                                <span>Heading</span>
+                                            </p>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav--sub-nav--item">
+                                    <ul class="sub-nav-list">
+                                        <li class="sub-nav-list--item">
+                                            <p class="sub-nav-list--item--heading">
+                                                <span>Heading</span>
+                                            </p>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav-list--item">
+                                            <a class="sub-nav-list--item--link" href="#">
+                                                <span class="item--link--icon">&gt;</span><span class="item--link--text">Item 1</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li  class="nav--list--item">
+                            <a id="nav-services" href="#" class="nav--link">
+                                <span>SERVICES</span>
+                            </a>
+                        </li>
+                        <li  class="nav--list--item">
+                            <a id="nav-departments" href="#" class="nav--link">
+                                <span>DEPARTMENTS</span>
+                            </a>
+                        </li>
+                        <li class="nav--list--item">
+                            <a id="nav-time" href="#" class="nav--link">
+                                <span>TIME</span>
+                            </a>
+                        </li>
+                        <li class="nav--list--item">
+                            <a id="nav-gallery" href="#" class="nav--link">
+                                <span>GALLERY &#10097;</span>
+                            </a>
+            
+                        </li>
+                        <li class="nav--list--item">
+                            <a id="nav-blog" href="#" class="nav--link">
+                                <span>BLOG &#10097;</span>
+                            </a>
+                        </li>
+                        <li class="nav--list--item">
+                            <a id="nav-contacts" href="#" class="nav--link">
+                                <span>CONTACTS</span>
+                            </a>
+                        </li>
+                        <li class="nav--list--item search-icon">
+                            <a id="nav-search" href="#" class="nav--link">
+                                <img id="search" src="./media/search-icon.png">
+                            </a>
+                        </li>
+                    </ul>
+        </div>
+
+    </nav>
+    <section class="hero">
+            <div class="fixed-container">
+                <h1 class="hero--heading">Take care of your health</h1>
+                <a class="hero--link" href="#"><span>MAKE AN APOINTMENT</span></a>
+            </div>
+    </section>
+    <!--======================== Info Section start  ========================-->
+    <section class="info">
+        <div class="fixed-container">
+            <div class="info--cards-wrapper">
+                <div class="info-card">
+                    <div class="info-card--heading-wrapper">
+                        <img class="info-card--heading-image" src="./media/calendar-icon.png">
+                        <h1 class="info-card--heading">OPENING HOURS</h1>
+                    </div>
+                    <div class="info-card--content-wrapper">
+                        <div class="info-card--opening-hours">
+                            <p class="info-card--opening-hours--days">Mon–Fri</p>
+                            <p class="info-card--opening-hours--time">8:00am–7:00pm</p>
+                        </div>
+                        <div class="info-card--opening-hours">
+                            <p class="info-card--opening-hours--days">Mon–Fri</p>
+                            <p class="info-card--opening-hours--time">8:00am–7:00pm</p>
+                        </div>
+                        <div class="info-card--opening-hours">
+                            <p class="info-card--opening-hours--days">Mon–Fri</p>
+                            <p class="info-card--opening-hours--time">8:00am–7:00pm</p>
+                        </div>
+                        <!-- <div class="clear-fix"></div> -->
+                    </div>
+                    <div class="clear-fix"></div> 
+                    <a class="info-card--link" href="#">
+                        <span>VIEW TIMETABLE</span>
+                    </a>
+                </div>
+                <div class="info-card">
+                    <div class="info-card--heading-wrapper">
+                        <img class="info-card--heading-image" src="./media/calendar-icon.png">
+                        <h1 class="info-card--heading">DOCTORS’ TIMETABLE</h1>
+                    </div>
+                    <div class="info-card--content-wrapper">
+                        <p class="info-card--general-info">
+                            The following is for guidance only to help you plan your appointment with a preferred doctor or nurse. It does not guarantee availability as the doctors or nurses may sometimes be attending to other duties.
+                        </p>
+                    </div>
+                    <a class="info-card--link" href="#">
+                        <span>VIEW TIMETABLE</span>
+                    </a>
+                </div>
+                <div class="info-card">
+                    <div class="info-card--heading-wrapper">
+                        <img class="info-card--heading-image" src="./media/calendar-icon.png">
+                        <h1 class="info-card--heading">APPOINTMENTS</h1>
+                    </div>
+                    <div class="info-card--content-wrapper">
+                        <p class="info-card--general-info">
+                            The first step towards a healthy life is to schedule an appointment. Please contact our office by phone or complete the appointment request form.
+                        </p>
+                    </div>
+                    <a class="info-card--link" href="#">
+                        <span>VIEW TIMETABLE</span>
+                    </a>
+                </div>
+                <div class="info-card">
+                    <div class="info-card--heading-wrapper">
+                        <img class="info-card--heading-image" src="./media/calendar-icon.png">
+                        <h1 class="info-card--heading">EMERGENCY CASES</h1>
+                    </div>
+                    <div class="info-card--content-wrapper">
+                        <a class="info-card--content-heading" href="#">1-800-1234-567</a>
+                        <p class="info-card--general-info">
+                            Call us!
+                        </p>
+                    </div>
+                    <a class="info-card--link" href="#">
+                        <span>VIEW TIMETABLE</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> <!--*********************** Info Section end  ***********************-->
+    
+    <!--======================== Skills Section start  ========================-->
+    <section class="skills">
+        <div class="fixed-container">
+            <h2 class="skills--heading">What Makes Us Different</h2>
+            <div class="skills--cards-wrapper">
+                <div class="skills-card">
+                    <img class="skills-card--image" src="./media/skill-1.png">
+                    <h3 class="skills-card--heading">Qualified Specialists</h3>
+                    <p class="skills-card--info">
+                        We hire the best specialists to deliver top-notch diagnostic services for you.
+                    </p>
+                </div>
+                <div class="skills-card">
+                    <img class="skills-card--image" src="./media/skill-2.png">
+                    <h3 class="skills-card--heading">Qualified Specialists</h3>
+                    <p class="skills-card--info">
+                        We hire the best specialists to deliver top-notch diagnostic services for you.
+                    </p>
+                </div>
+                <div class="skills-card">
+                    <img class="skills-card--image" src="./media/skill-3.png">
+                    <h3 class="skills-card--heading">Qualified Specialists</h3>
+                    <p class="skills-card--info">
+                        We hire the best specialists to deliver top-notch diagnostic services for you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> <!--*********************** Skills Section end  ***********************-->
+    
+    <!--======================== Diagnostic |Free Consultation| start  ========================-->
+    <section id="diagnostic" class="free-consultation">
+        <div class="fixed-container">
+            <h2 class="free-consultation--heading">All Kindsof Diagnostics</h2>
+            <p class="free-consultation--info">Medina offers the region’s most comprehensive range of diagnostic services, from MRI to X-ray.</p>
+            <a class="free-consultation--link" href="#">
+                <span>FREE CONSULTATION</span>
+            </a>
+        </div>
+    </section> <!--*********************** Diagnostic |Free Consultation| Consultation end  ***********************-->
+    
+    <!--======================== Our Services start  ========================-->
+    <section class="our-services">
+        <div class="fixed-container">
+            <h2 class="our-services--heading">Our Services</h2>
+            <p class="our-services--info">At our clinic, you can experience the best and the most extensive range of diagnostic services in the state. Feel free to browse our website for more information.</p>
+            <div class="our-services--card-wrapper">
+                <div class="our-services--card">
+                    <img class="our-services--card--image" src="./media/home-01-320x320.jpg">
+                    <a class="our-services--card--link" href="#">
+                        <img src="./media/arrow-right-gray.png"><span>PEDIATRICS</span>
+                    </a>
+                </div>
+                <div class="our-services--card">
+                    <img class="our-services--card--image" src="./media/home-02-320x320.jpg">
+                    <a class="our-services--card--link" href="#">
+                        <img src="./media/arrow-right-gray.png"><span>MRI OF THE BRAIN</span>
+                    </a>
+                </div>
+                <div class="our-services--card">
+                    <img class="our-services--card--image" src="./media/home-03-320x320.jpg">
+                    <a class="our-services--card--link" href="#">
+                        <img src="./media/arrow-right-gray.png"><span>X-RAY DIAGNOSTIC</span>
+                    </a>
+                </div>
+                <div class="our-services--card">
+                    <img class="our-services--card--image" src="./media/home-04-320x320.jpg">
+                    <a class="our-services--card--link" href="#">
+                        <img src="./media/arrow-right-gray.png"><span>LABORATORY SERVICES</span>
+                    </a>
+                </div>
+                <div class="our-services--card">
+                    <img class="our-services--card--image" src="./media/home-05-320x320.jpg">
+                    <a class="our-services--card--link" href="#">
+                        <img src="./media/arrow-right-gray.png"><span>PREGNACY</span>
+                    </a>
+                </div>
+                <div class="our-services--card">
+                    <img class="our-services--card--image" src="./media/home-06-320x320.jpg">
+                    <a class="our-services--card--link" href="#">
+                        <img src="./media/arrow-right-gray.png"><span>BEST EQUIPMENT</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> <!--*********************** Our Services end  ***********************-->
+    
+    <!--======================== Team start  ========================-->
+    <section class="team">
+        <div class="team--team-member">
+            <a href="#">
+                <img class="team--team-member--image" src="./media/our-team-05-384x410.jpg">
+            </a>
+            <div class="team--team-member--info">
+                <p class="team--team-member--name">Dr. Scott Riley</p>
+                <p class="team--team-member--position">Chief Medical Officer, Pathologist</p>
+                <a href="#" class="team--team-member--profile">
+                    <span>VIEW FULL PROFILE</span>
+                </a>
+            </div>
+
+            
+        </div>
+        <div class="team--team-member">
+            <a href="#">
+                <img class="team--team-member--image" src="./media/our-team-06-384x410.jpg">
+            </a>
+            <div class="team--team-member--info">
+                <p class="team--team-member--name">Dr. Jane Fowler</p>
+                <p class="team--team-member--position">Clinical Laboratory Technologist</p>
+                <a href="#" class="team--team-member--profile">
+                    <span>VIEW FULL PROFILE</span>
+                </a>
+            </div>
+        </div>
+        <div class="team--team-member">
+            <a href="#">
+                <img class="team--team-member--image" src="./media/our-team-07-384x410.jpg">
+            </a>
+            <div class="team--team-member--info">
+                <p class="team--team-member--name">Dr. Eric Snyder</p>
+                <p class="team--team-member--position">MRI Technologist</p>
+                <a href="#" class="team--team-member--profile">
+                    <span>VIEW FULL PROFILE</span>
+                </a>
+            </div>
+        </div>
+        <div class="team--team-member">
+            <a href="#">
+                <img class="team--team-member--image" src="./media/our-team-08-384x410.jpg">
+            </a>
+            <div class="team--team-member--info">
+                <p class="team--team-member--name">Dr. Martha Schmidt</p>
+                <p class="team--team-member--position">EKG Technician</p>
+                <a href="#" class="team--team-member--profile">
+                    <span>VIEW FULL PROFILE</span>
+                </a>
+            </div>
+        </div>
+        <div class="team--team-member">
+            <a href="#">
+                <img class="team--team-member--image" src="./media/our-team-09-384x410.jpg">
+            </a>
+            <div class="team--team-member--info">
+                <p class="team--team-member--name">Dr. James Wilson</p>
+                <p class="team--team-member--position">Radiology Technician</p>
+                <a href="#" class="team--team-member--profile">
+                    <span>VIEW FULL PROFILE</span>
+                </a>
+            </div>
+        </div>
+    </section> <!--*********************** Team end  ***********************-->
+    
+    <!--======================== Testimonials start  ========================-->
+    <section class="testimonials">
+        
+            <h2 class="testinanials--heading">Testimonials</h2>
+            <div class="fixed-container">
+            <div class="testimonial-card">
+                <img class="testimonial-card--quote" src="./media/quotes.png">
+                <div class="testimonial-card--content">
+                    <p class="testimonial-card--content--text">
+                        I had a colonoscopy at Medina Diagnostic Center. From the moment I entered the center, I was greeted and treated warmly and respectfully and it was the best experience.
+                    </p>
+                    <div class="testimonial-card--user">
+                        <img class="testimonial-card--user--image" src="./media/user-betty-wade-60x60.jpg" alt="">
+                    </div>
+                    <p class="testimonial-card--user--name">Betty Wade</p>
+                    <p class="testimonial-card--user--type">Patient</p>
+                    <div class="clear-fix"></div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img class="testimonial-card--quote" src="./media/quotes.png">
+                <div class="testimonial-card--content">
+                    <p class="testimonial-card--content--text">
+                        I had a colonoscopy at Medina Diagnostic Center. From the moment I entered the center, I was greeted and treated warmly and respectfully and it was the best experience.
+                    </p>
+                    <div class="testimonial-card--user">
+                        <img class="testimonial-card--user--image" src="./media/user-betty-wade-60x60.jpg" alt="">
+                    </div>
+                    <p class="testimonial-card--user--name">Betty Wade</p>
+                    <p class="testimonial-card--user--type">Patient</p>
+                    <div class="clear-fix"></div>
+                </div>
+            </div>
+        </div>
+        
+    </section> <!--*********************** Testimonials end  ***********************-->
+    
+    <!--======================== Pediatric |Free Consultation| start  ========================-->
+    <section id="pediatric" class="free-consultation">
+        <div class="fixed-container">
+            <h2 class="free-consultation--heading">All Kindsof Diagnostics</h2>
+            <p class="free-consultation--info">Medina offers the region’s most comprehensive range of diagnostic services, from MRI to X-ray.</p>
+            <a class="free-consultation--link" href="#">
+                <span>FREE CONSULTATION</span>
+            </a>
+        </div>
+    </section> <!--*********************** Pediatric |Free Consultation| Consultation end  ***********************-->
+    
+    <!--======================== Blog Posts start  ========================-->
+    <section class="blog-posts">
+        <h2 class="blog-posts--heading">Latest Blog Posts</h2>
+        <div class="fixed-container">
+            <div class="blog-posts--wrapper">
+                    <div class="blog-post">
+                        <div class="blog-post--image-wrapper">
+                            <img class="blog-post--image" src="./media/post-13-370x250.jpg">
+                        </div>
+                        <a class="blog-post--heading" href="#">Reasons to Visit a Breast Specialist</a>
+                        <p>
+                            <span class="blog-post--date">June 21, 2018 at 8:12pm</span>
+                            <a class="blog-post--category" href="#">News</a>
+                        </p>
+                        <p class="blog-post--exerpt">
+                            There are a lot of women that are unaware of the numerous risks associated with their health and eventually ignore the importance of visiting...
+                        </p>
+                    </div>
+                    <div class="blog-post">
+                        <div class="blog-post--image-wrapper">
+                            <img class="blog-post--image" src="./media/post-14-370x250.jpg">
+                        </div>
+                        <a class="blog-post--heading" href="#">Picking the Right Diagnostic Services for Efficient Results</a>
+                        <p>
+                            <span class="blog-post--date">June 21, 2018 at 8:12pm</span>
+                            <a class="blog-post--category" href="#">News</a>
+                        </p>
+                        <p class="blog-post--exerpt">
+                            There are a lot of women that are unaware of the numerous risks associated with their health and eventually ignore the importance of visiting...
+                        </p>
+                    </div>
+                    <div class="blog-post">
+                        <div class="blog-post--image-wrapper">
+                            <img class="blog-post--image" src="./media/post-13-370x250.jpg">
+                        </div>
+                        <a class="blog-post--heading" href="#">Preparing for an ECG in 8 Easy Steps: Tips From Our Diagnosticians</a>
+                        <p>
+                            <span class="blog-post--date">June 21, 2018 at 8:12pm</span>
+                            <a class="blog-post--category" href="#">News</a>
+                        </p>
+                        <p class="blog-post--exerpt">
+                                An ECG stands for an "electrocardiogram," which is a test that measures and records the electrical activity of the heart. It is used by doctors to obtain...
+                        </p>
+                    </div>
+                </div>
+                <a class="blog-post--link" href="#"><span>VIEW ALL BLOG POSTS</span></a>
+        </div>
+
+    </section> <!--*********************** Blog Posts end  ***********************-->
+
+    <!--======================== Google maps start  ========================-->
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11396.474625199719!2d26.0538677!3d44.4307282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc01aa42ea789e2a1!2sSparkWare+Technologies!5e0!3m2!1sro!2sro!4v1542798056662" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <!--*********************** Google maps end  ***********************-->
+
+    <!--======================== Footer start  ========================-->
+    <footer class="footer">
+        <div class="footer--wrapper">
+            <div class="footer--newsletter">
+                <h3 class="footer--heading">NEWSLETTER</h3>
+                <div class="horizontal-line"></div>
+                <p class="footer--newsletter-info">Enter your email address to receive up-to-date news, new patient information and other useful stuff, delivered right to your inbox.</p>
+                <div class="email-wrapper">
+                    <input id="email-input" type="email" placeholder="Your e-mail...">
+                    <button id="email-submit" type="submit">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="footer--contact">
+                <h3 class="footer--heading text-center">CONTACT US</h3>
+                <div class="horizontal-line"></div>
+                <div class="footer--contact-item">
+                    <img class="footer--contact-item--image" src="./media/phone-logo.png">
+                    <a class="footer--contact-item--link" href="#">1-800-1234-567</a>
+                    <span>, </span>
+                    <a class="footer--contact-item--link" href="#">1-800-3214-321</a>
+                </div>
+                <div class="footer--contact-item">
+                    <img class="footer--contact-item--image" src="./media/map-marker-logo.png">
+                    <a class="footer--contact-item--link" href="#">2130 Fulton Street San Diego, CA 94117-1080 USA</a>
+                </div>
+                <div class="footer--contact-item">
+                    <img class="footer--contact-item--image" src="./media/skype-icon.png">
+                    <a class="footer--contact-item--link" href="#">info@demolink.org</a>
+                </div>
+            </div>
+            <div class="footer--social">
+                <a href="#">
+                    <img class="footer--social--logo" src="./media/logo-dark.png">
+                </a>
+                <ul class="footer--social--icon-list text-center">
+                    <li class="icon-list-item">
+                        <div class="icon-list-item--wrapper">
+                            <a id="facebook-icon" href="#" class="icon-list-item--overlay">
+                                <span class="icon-list-item--logo"></span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="icon-list-item">
+                        <div class="icon-list-item--wrapper">
+                            <a id="twitter-icon" href="#" class="icon-list-item--overlay">
+                                    <span class="icon-list-item--logo"></span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="icon-list-item">
+                        <div class="icon-list-item--wrapper">
+                            <a id="google-plus-icon" href="#" class="icon-list-item--overlay">
+                                    <span class="icon-list-item--logo"></span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="icon-list-item">
+                        <div class="icon-list-item--wrapper">
+                            <a id="instagram-icon" href="#" class="icon-list-item--overlay">
+                                <span class="icon-list-item--logo"></span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fixed-container">
+                <p class="copyright-info text-center">&copy; 2018 Medina diagnostic center.<a class="privacy-policy" href="#"> Privacy Policy</a>.</p>
+        </div>
+    </footer> <!--*********************** Footer end  ***********************-->
+
+    <script src="main.js"></script>
+</body>
+</html>
