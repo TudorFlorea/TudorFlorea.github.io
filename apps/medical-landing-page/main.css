@@ -605,7 +605,7 @@ header {
     width: 125px;
     height: 125px;
     margin: 2rem auto;
-    animation: rotate-45deg 4s infinite;
+    /* animation: rotate-45deg 4s infinite; */
 }
 
 .skills-card--image:hover {
