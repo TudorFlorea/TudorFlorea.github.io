@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #33363D;
+    color: #fff;
+}
+
+#top-box,
+#game-status-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#timer-wrapper {
+    /* border: 1px solid black; */
+    width: 300px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #FB7D44;
+    font-size: 20px;
+    display: inline-block;
+}
+
+
+
+#score-wrapper,
+#status-wrapper {
+    float: right;
+}
+
+#score-wrapper {
+    width: 300px;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+    background-color: #FB7D44;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+#score-text {
+    margin-left: 10px;
+}
+
+#score-value {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#game-wrapper {
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#conditions-wrapper,
+#status-wrapper {
+    display: inline-block;
+    border: 1px solid black;
+    width: 300px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #191A1D;
+    vertical-align: top;
+}
+
+#cards-wrapper {
+    display: inline-block;
+}
+
+.top-card,
+.bottom-card {
+    width: 160px;
+    height: 190px;
+    padding: 10px;
+    background-color: #191A1D;
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: top;
+}
+
+.bottom-card {
+    margin-top: 20px;
+}
+
+.card {
+    /* background-color: #FB7D44; */
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.card span {
+    font-size: 30px;
+}
+
+.setelcted-bottom-card {
+    border: 3px dashed #fff;
+}
+
+#controls-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#suffle,
+#discard {
+    color: #fff;
+    display: inline-block;
+    min-width: 240px;
+    padding: 25px 40px;
+    border: none;
+    font-size: 25px;
+    margin: 10px;
+}
+
+#suffle {
+    background-color: #2A92BF;
+}
+
+#discard {
+    background-color: #FB7D44;
+}
