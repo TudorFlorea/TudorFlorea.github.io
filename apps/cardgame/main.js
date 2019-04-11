@@ -1,4 +1,4 @@
-const START_TIMER = 120;
+const START_TIMER = 240;
 
 var score = 0;
 
@@ -44,10 +44,12 @@ var conditionsAsserter = new ConditionsAsserter();
 function clearCards() {
     [].forEach.call($topCards, function($topCard) {
         $topCard.innerHTML = "";
+        $topCard.style.border = 'none';
     });
 
     [].forEach.call($bottomCards, function($bottomCard) {
         $bottomCard.innerHTML = "";
+        $bottomCard.style.border = 'none';
     });
 } 
 
