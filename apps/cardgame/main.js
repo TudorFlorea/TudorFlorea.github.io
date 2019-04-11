@@ -1,4 +1,4 @@
-const START_TIMER = 240;
+const START_TIMER = 120;
 
 var score = 0;
 
@@ -6,7 +6,10 @@ var $dragElement = null;
 var $selectedBottomCard = null;
 
 var timer = START_TIMER;
+var replaceCardTimer = randIntBetween(10, 20);
 
+var $playBtn = document.getElementById('play-btn');
+var $overlayWrapper = document.getElementById('overlay-wrapper');
 var $timerSpan = document.getElementById("timer");
 var $suffleBtn = document.getElementById("suffle");
 var $discardBtn = document.getElementById("discard");
@@ -15,6 +18,10 @@ var $bottomCards = document.getElementsByClassName("bottom-card");
 var $scoreValue = document.getElementById("score-value");
 var $winningConditons = document.getElementById('conditions-wrapper');
 var $status = document.getElementById('status-wrapper');
+var $gameOverText = document.getElementById('gameover-text');
+var $gameOverScore = document.getElementById('gameover-score');
+var $selectedCardForReplacement;
+
 
 var takeCard = new Audio('sounds/takeCard.wav');
 var placeCard = new Audio('sounds/placeCard.wav');
@@ -22,11 +29,27 @@ var suffleCards = new Audio('sounds/suffleCards.wav');
 var win = new Audio('sounds/win.wav');
 var cardDiscard = new Audio('sounds/cardDiscard.wav');
 
+var timerInterval;
+var replaceCardInterval;
 var nextScore;
 var nextTime;
 var level = 0;
+var gameOver = false;
+
+var isShuffleling = false;
+var shuffleIndex = 0;
 
 var conditionsAsserter = new ConditionsAsserter();
+
+function clearCards() {
+    [].forEach.call($topCards, function($topCard) {
+        $topCard.innerHTML = "";
+    });
+
+    [].forEach.call($bottomCards, function($bottomCard) {
+        $bottomCard.innerHTML = "";
+    });
+} 
 
 
 function fillConditions() {
@@ -47,6 +70,19 @@ function fillStatus() {
     $status.innerHTML = html;
 }
 
+function addCardsHoverEventListeners() {
+    var cards = document.querySelectorAll('.top-card, .bottom-card');
+    [].forEach.call(cards, function($card) {
+        $card.addEventListener('mouseenter', function() {
+            this.style.backgroundColor = '#292B31';
+            
+        });
+
+        $card.addEventListener('mouseleave', function() {
+            this.style.backgroundColor = '#191A1D';
+        });
+    });
+}
 
 function addBottomCardsClickEventListeners() {
     [].forEach.call($bottomCards, function($bottomCard) {
@@ -68,19 +104,19 @@ function addBottomCardsClickEventListeners() {
 
 
 
-var timerInterval = setInterval(function() {
-    timer--;
-    if(timer == 0) {
-        clearInterval(timerInterval);
-    }
-    console.log(timer);
-    var hours = Math.floor(timer / 3600);
-    var minutes =  Math.floor(timer / 60 - hours * 60);
-    var seconds = timer - (minutes * 60) - (hours * 3600);
-    if(minutes < 10) minutes = "0" + minutes;
-    if(seconds < 10) seconds = "0" + seconds;
-    $timerSpan.innerText = hours + ":" + minutes + ":" + seconds;
-}, 1000);
+
+$playBtn.addEventListener('click', function() {
+    $overlayWrapper.style.display = 'none';
+    timer = START_TIMER;
+    init();
+});
+
+function showGameOver() {
+    $overlayWrapper.style.display = 'flex';
+    $gameOverText.style.display = 'block';
+    $gameOverScore.innerHTML = 'Your score is: ' + score;
+    clearInterval(replaceCardInterval);
+}
 
 $discardBtn.addEventListener('click', function() {
     console.log($selectedBottomCard);
@@ -96,11 +132,17 @@ $discardBtn.addEventListener('click', function() {
 $suffleBtn.addEventListener('click', onSuffle);
 
 function onSuffle() {
+    if(gameOver || isShuffleling) {
+        return;
+    }
     suffleCards.play();
     decrementNextScore();
     fillStatus();
+    var offsetTime = 0;
+    isShuffleling = true;
     [].forEach.call($topCards, function($topcard) {
         var $card;
+        
         if($topcard.children.length === 0) {
             $card = document.createElement('img');
             addCardEventListeners($card);
@@ -108,6 +150,7 @@ function onSuffle() {
             $card = $topcard.getElementsByClassName('card')[0];
         }
         if($card) {
+            offsetTime += 300;
             var card = CARDS[randIntBetween(0, CARDS.length - 1)];
 
             $card.setAttribute('number', card.number);
@@ -119,7 +162,12 @@ function onSuffle() {
             setTimeout(function() {
                 $card.setAttribute('draggable', true);
                 $card.setAttribute('src', card.src);
-            }, 1200);
+                shuffleIndex++;
+                if(shuffleIndex == 4) {
+                    shuffleIndex = 0;
+                    isShuffleling = false;
+                }
+            }, offsetTime);
         }
     });
 }
@@ -170,8 +218,14 @@ function spinCards() {
 }
 
 function emptyBottomCards() {
+    var winOffsetTime = 0;
     [].forEach.call($bottomCards, function($bottomCard) {
-        $bottomCard.innerHTML = "";
+        $card = $bottomCard.getElementsByClassName('card')[0];
+        $card && $card.setAttribute('src', './images/cardBack_blue2.png');
+        winOffsetTime += 200;
+        setTimeout(function() {
+            $bottomCard.innerHTML = "";
+        }, winOffsetTime);
     });
 }
 
@@ -203,7 +257,16 @@ function checkConditions() {
 }
 
 
+function buildHighScore() {
+   // var heighscore = JSON.parse(localStorage.getItem('highscore'));
+    // console.log('====================================');
+    // console.log(heighscore);
+    // console.log('====================================');
 
+
+}
+
+// buildHighScore();
 /* EVENT LISTENERS */
 
 function addCardEventListeners($card) {
@@ -240,6 +303,7 @@ function handleDragStart(e) {
     e.dataTransfer.effectAllowed = 'move';
     e.dataTransfer.setData('text/html', e.target.parentNode.innerHTML);
     takeCard.play();
+
 }
 
 function handleDragOver(e) {
@@ -254,11 +318,11 @@ function handleDragOver(e) {
   
   function handleDragEnter(e) {
     // this / e.target is the current hover target.
-    this.classList.add('over');
+    //this.parentNode.style.backgroundColor = '#191A1D';
   }
   
   function handleDragLeave(e) {
-    this.classList.remove('over');  // this / e.target is previous target element.
+    this.parentNode.style.backgroundColor = '#191A1D';  // this / e.target is previous target element.
   }
 
   function handleDrop(e) {
@@ -308,15 +372,69 @@ function handleDragOver(e) {
     return false;
 }
 
+function initEventListeners() {
+    addCardsHoverEventListeners();
+    addBottomCardsClickEventListeners();
+    addDropEventListeners();
+}
+
+function replaceCard($selectedCardForReplacement) {
+    console.log("replaced a card");
+    if(isShuffleling) return;
+
+    $card = $selectedCardForReplacement.getElementsByClassName('card')[0];
+    console.log('=============DRAG================');
+    console.log($dragElement);
+    console.log('=============CARD==================');
+    console.log($card);
+    if ($dragElement == $card) return;
+    if($card) {
+        var card = CARDS[randIntBetween(0, CARDS.length - 1)];
+        $card.setAttribute('number', card.number);
+        $card.setAttribute('type', card.type);
+        $card.setAttribute('src', card.src);
+    }
+
+}
+
 function init() {
     fillConditions();
     generateNextScore();
     generateNextTime();
     fillStatus();
-    addBottomCardsClickEventListeners();
     spinCards();
-    addDropEventListeners();
+    gameOver = false;
+    $scoreValue.innerHTML = score;
+    timerInterval = setInterval(function() {
+        timer--;
+        if(timer == 0) {
+            clearInterval(timerInterval);
+            gameOver = true;
+            clearCards();
+            showGameOver();
+        }
+        var hours = Math.floor(timer / 3600);
+        var minutes =  Math.floor(timer / 60 - hours * 60);
+        var seconds = timer - (minutes * 60) - (hours * 3600);
+        if(minutes < 10) minutes = "0" + minutes;
+        if(seconds < 10) seconds = "0" + seconds;
+        $timerSpan.innerText = hours + ":" + minutes + ":" + seconds;
+    }, 1000);
+
+    $selectedCardForReplacement = $topCards[randIntBetween(0, $topCards.length)];
+    $selectedCardForReplacement.style.border = '2px dashed #FB7D44';
+    replaceCardInterval = setInterval(function() {
+        replaceCardTimer--;
+
+        if(replaceCardTimer == 0) {
+            $selectedCardForReplacement.style.border = 'none';
+            replaceCard($selectedCardForReplacement);
+            replaceCardTimer = randIntBetween(10, 20);
+            $selectedCardForReplacement = $topCards[randIntBetween(0, $topCards.length)];
+            $selectedCardForReplacement.style.border = '2px dashed #FB7D44';
+        }
+    }, 1000);
 }
 
-init();
+initEventListeners();
 

@@ -10,6 +10,55 @@ body {
     color: #fff;
 }
 
+#overlay-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+}
+
+#gameover-text {
+    font-size: 60px;
+    color: #FB7D44;
+    margin: 40px;
+    text-align: center;
+    display: none;
+}
+
+#gameover-score {
+    font-size: 40px;
+}
+
+#play-btn {
+    width: 300px;
+    padding: 40px;
+    background-color: #00B961;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+#play-btn:hover,
+#suffle:hover,
+#discard:hover {
+    transform: scale(1.05);
+}
+
+#highscore-wrapper {
+    padding: 20px;
+}
+
+.highscore-item {
+    font-size: 18px;
+}
+
 #top-box,
 #game-status-wrapper {
     max-width: 800px;
@@ -122,6 +171,7 @@ body {
     border: none;
     font-size: 25px;
     margin: 10px;
+    transition: all 0.1s linear;
 }
 
 #suffle {

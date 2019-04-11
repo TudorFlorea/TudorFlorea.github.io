@@ -5,7 +5,7 @@ function ConditionsAsserter() {
 
 
 ConditionsAsserter.prototype.generateConditions = function() {
-    this.color = COLORS[randIntBetween(0, COLORS.length - 1)];
+    this.color = COLORS[randIntBetween(0, COLORS.length)];
     if(Math.random() < 0.5) {
         this.colorCondition = COLOR_EQUAL_TO_CONDTION;
         this.colorMessage = "Color equal to ";
@@ -14,7 +14,7 @@ ConditionsAsserter.prototype.generateConditions = function() {
         this.colorMessage = "Color not equal to ";
     }
 
-    this.type = CARD_TYPES[randIntBetween(0, CARD_TYPES.length - 1)];
+    this.type = CARD_TYPES[randIntBetween(0, CARD_TYPES.length)];
     if(Math.random() < 0.5) {
         this.typeCondition = this.TYPE_EQUALS_TO;
         this.typeMessage = "Type equal to: ";
@@ -26,7 +26,7 @@ ConditionsAsserter.prototype.generateConditions = function() {
     this.number = randIntBetween(6, 9);
     if(Math.random() < 0.5) {
         this.numberCondition = this.TYPE_NUMBER_LESS_THAN_OR_EQUALS;
-        this.numberMessage = "Number less than: ";
+        this.numberMessage = "Number less than or equal to: ";
     } else {
         this.numberCondition = this.TYPE_NUMBER_GREATHER_THAN;
         this.numberMessage = "Number greater than: ";
