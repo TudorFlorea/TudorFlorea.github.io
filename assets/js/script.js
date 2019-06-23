@@ -145,6 +145,27 @@ function scroll() {
  document.onscroll = scroll;
 
 
+
+   ///////////////////////////////
+   // Burger menu
+   ///////////////////////////////
+
+   $(document).ready(function() {
+
+     var $burgerContainer = $(".burger-container");
+
+    $burgerContainer.on('click', function() {
+      $(this).toggleClass('burger-change');
+    });
+
+    $(document.body).on('click', function() {
+      if ($('#burger-nav').hasClass('open')) {
+        $burgerContainer.removeClass('burger-change');
+      }
+    });
+
+  });
+
   ///////////////////////////////
   // Testimonial Slide
   ///////////////////////////////
@@ -158,6 +179,8 @@ function scroll() {
       paginationSpeed : 400,
       singleItem:true,
   });
+
+
 
 });
 
@@ -245,3 +268,7 @@ function init() {
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
+
+// function myFunction(x) {
+//   x.classList.toggle("burger-change");
+// }
